@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:testing_in_flutter_blog/pages/all_todos_page.dart';
+import 'package:testing_in_flutter_blog/pages/login_page.dart';
 
 void main() {
-  runApp(TestingInFlutterBlog());
+  runApp(ProviderScope(child: TestingInFlutterBlog()));
 }
 
 class TestingInFlutterBlog extends StatelessWidget {
@@ -10,6 +12,9 @@ class TestingInFlutterBlog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: AllTodoPage(),
+    );
   }
 }

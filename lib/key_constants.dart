@@ -17,22 +17,22 @@ const kPasswordErrorText = 'Password must be at least 6 characters';
 
 final mockQuotesForTesting = [
   Todo(
-    id: 1,
-    todo: 'Test todo 1',
-    completed: true,
-    userId: 1,
+     1,
+     'Test todo 1',
+     true,
+     1,
   ),
   Todo(
-    id: 2,
-    todo: 'Test todo 2',
-    completed: true,
-    userId: 1,
+     2,
+     'Test todo 2',
+     true,
+     1,
   ),
   Todo(
-    id: 3,
-    todo: 'Test todo 3',
-    completed: true,
-    userId: 1,
+     3,
+     'Test todo 3',
+     true,
+     1,
   ),
 ];
 

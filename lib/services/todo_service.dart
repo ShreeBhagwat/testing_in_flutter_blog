@@ -15,7 +15,7 @@ class TodoService {
       final decodedData = jsonDecode(response.body) as Map<String, dynamic>;
 
       final todos =
-          decodedData['todos'].map((todo) => Todo.fromJson(todo)).toList();
+          decodedData['todos'].map<Todo>((todo) => Todo.fromJson(todo)).toList();
 
       return todos;
     } else {

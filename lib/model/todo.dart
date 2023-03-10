@@ -4,19 +4,19 @@ class Todo {
   final bool? completed;
   final int? userId;
 
-  Todo({
+  Todo(
     this.id,
     this.todo,
     this.completed,
     this.userId,
-  });
+  );
 
   factory Todo.fromJson(Map<String, dynamic> json) {
     return Todo(
-      id: json['id'],
-      todo: json['todo'],
-      completed: json['completed'],
-      userId: json['userId'],
+      json['id'] as int?,
+      json['todo'] as String?,
+      json['completed'] as bool?,
+      json['userId'] as int?,
     );
   }
 }

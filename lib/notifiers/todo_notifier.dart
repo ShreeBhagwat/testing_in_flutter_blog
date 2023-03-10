@@ -29,5 +29,5 @@ class TodoNotifier extends ChangeNotifier {
 }
 
 final _client = Client();
-final todosNotifier =
+final todosNotifierProvider =
     ChangeNotifierProvider((ref) => TodoNotifier(TodoService(_client)));
