@@ -14,7 +14,7 @@ class TestingInFlutterBlog extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AllTodoPage(),
+      home: LoginScreen(),
     );
   }
 }
