@@ -36,7 +36,7 @@ final mockQuotesForTesting = [
   ),
 ];
 
-final mockQuotes = jsonEncode(data);
+final mockTodos = jsonEncode(data);
 
 final data = {
   "todos": [
