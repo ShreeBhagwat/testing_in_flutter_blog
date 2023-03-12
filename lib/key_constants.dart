@@ -40,6 +40,6 @@ final mockTodos = jsonEncode(data);
 
 final data = {
   "todos": [
-    {"id": 1, "todo": "Create testing blog", "completed": true, "userId": '1'}
+    {"id": 1, "todo": "Create testing blog", "completed": true, "userId": 1}
   ],
 };
